@@ -104,6 +104,7 @@ fieldset legend {
 
 #divTop {
   display: flex;
+  gap: 1rem;
 }
 
 input {
