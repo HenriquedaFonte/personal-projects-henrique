@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styleForm.css">
+  <title>Inscription form</title>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1>DPKin 2022</h1>
+      <p>Inscrição para o campeonato 2022</p>
+    </header>
+    <form id="myForm">
+      <fieldset>
+        <div class="myfieldset">
+          <legend>Informações pessoais</legend>
+          <div id="divTop">
+            <div class="input">
+              <label for="nome">Nome<span class="red">*</span></label>
+              <input required type="text" name="nome" id="nome" />
+            </div>
+            <div class="input">
+              <label for="sobrenome">Sobrenome<span class="red">*</span></label>
+              <input required type="text" name="sobrenome" id="sobrenome" />
+            </div>
+          </div>
+          <div class="input">
+            <label for="email">Email<span class="red">*</span><span>(Digite um email válido)</span></label>
+            <input required type="email" name="email" id="email" />
+          </div>
+          <div class="input">
+            <label for="senha">Senha<span class="red">*</span><span>(Mínimo de 8 caracteres)</span></label>
+            <input required minlength="8" type="password" name="senha" id="senha" />
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="myfieldset">
+          <legend>Selecione uma categoria</legend>
+          <div class="checkRadio">
+            <div class="check">
+              <label for="categoria">SuperPro<span>(Peso Mínimo 85kg)</span></label>
+              <input type="radio" value="SuperPro" name="radiocategoria" id="categoria" />
+            </div>
+            <div class="check">
+              <label for="categoria">Pro<span>(Peso Mínimo 85kg)</span></label>
+              <input type="radio" value="Pro" name="radiocategoria" id="categoria" />
+            </div>
+            <div class="check">
+              <label for="categoria">Light<span>(Peso Mínimo 70kg)</span></label>
+              <input type="radio" value="Light" name="radiocategoria" id="categoria" />
+            </div>
+            <div class="check">
+              <label for="categoria">Pesados<span>(Peso Mínimo 105kg)</span></label>
+              <input type="radio" value="Pesados" name="radiocategoria" id="categoria" />
+            </div>
+            <div class="check">
+              <label for="categoria">Feminina</label>
+              <input type="radio" value="Feminina" name="radiocategoria" id="categoria" />
+            </div>
+          </div>
+          <div class="input">
+            <label for="peso">Seu Peso</label>
+            <input type="text" name="peso" id="peso" />
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="myfieldset">
+          <div class="input">
+            <legend>Informações adicionais</legend>
+            <label for="duplas">Você irá competir no campeonato de duplas?<span>(Digite o nome da sua
+                dupla)</span></label>
+            <input type="text" name="duplas" id="duplas" />
+          </div>
+          <div class="input">
+            <label for="observacao">Tem algo que você gostaria de nos contar?</label>
+            <textarea type="text" name="observacao" id="observacao" placeholder=" "></textarea>
+          </div>
+        </div>
+      </fieldset>
+      <div class="divisoria"></div>
+      <footer>
+        <div class="footer">
+          <button type="submit">Enviar</button>
+        </div>
+      </footer>
+    </form>
+  </div>
+</body>
+</html>

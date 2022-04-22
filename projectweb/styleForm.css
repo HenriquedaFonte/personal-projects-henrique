@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --font: 'Racing Sans One', cursive;
+  --fontColor: black;
+  --fontColor-header: white;
+  --fontColor-span: grey;
+  --fontSize-heading: 4rem;
+  --fontSize-body: 2rem;
+  --fontSize-span: 1rem;
+  --fontSize-legend: 2.5rem;
+  
+
+  --hue: 134;
+  --bgColor: hsl(var(--hue), 100%, 70%)
+}
+
+body{
+  width: 144rem;
+  height: auto;
+  font-family: var(--font);
+  color: var(--fontColor);
+  background: linear-gradient(236.85deg, #208f16 35.26%, #69ce60 96.03%);  
+}
+
+span {
+  color: var(--fontColor-span);
+  font-size: var(--fontSize-span);
+  margin-left: 12px;
+}
+
+.red {
+  color: #f01f26;
+  font-size: 2rem;
+}
+
+.page {
+  font: var(--font);
+  width: 736px;
+  margin: auto;  
+}
+
+header {
+
+}
+
+header h1 {
+  margin-top: 3rem;
+  font-size: var(--fontSize-heading);
+  color: var(--fontColor-header);
+}
+
+header p {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: var(--fontSize-body);
+}
+
+body::before {
+  background-color: #10460b;
+  content: '';
+  width: 100%;
+  height: 20rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  min-height: 30rem;
+  padding: 6.4rem;
+  gap: 4rem;
+  margin: 1rem auto; 
+  width: auto;
+  height: auto;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #a9e9a3;
+  
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  font-weight: 600;
+  font-size: var(--fontSize-legend);
+  line-height: 3rem;
+  width: 100%;
+  border-bottom: 0.1rem solid #0c5731;
+  padding-bottom: 1.6rem;
+}
+
+.myfieldset {
+  font-size: var(--fontSize-body);
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+#divTop {
+  display: flex;
+}
+
+input {
+  width: 100%;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 0.8rem;
+  height: 3.5rem;
+  padding: 0 2.4rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+#categoria {
+    height: 2rem;
+}
+
+.checkRadio {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  
+}
+
+.check {
+  display: flex;
+  margin-right: 40rem;
+ }
+
+textarea {
+  width: 100%;
+  height: 10rem;
+}
+
+.divisoria {
+  border: 1px solid #0c5731;
+}
+
+footer button {
+  color: var(--fontColor-header);
+  width: 100%;
+  height: 4.2rem;
+  border-radius: 1rem;
+  font-size: 4rem;
+  background-color: #0c5731;
+}
