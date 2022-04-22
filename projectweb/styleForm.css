@@ -22,8 +22,6 @@
 }
 
 body{
-  width: 144rem;
-  height: auto;
   font-family: var(--font);
   color: var(--fontColor);
   background: linear-gradient(236.85deg, #208f16 35.26%, #69ce60 96.03%);  
@@ -46,9 +44,6 @@ span {
   margin: auto;  
 }
 
-header {
-
-}
 
 header h1 {
   margin-top: 3rem;
