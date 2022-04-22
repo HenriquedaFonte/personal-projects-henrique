@@ -9,7 +9,7 @@ A way to document my journey as a WebDev aspirer 🚀
 
 ### 📌 Table of Contents
 
-- Project: [Website for DPKin](https://henriquedafonte.github.io/personal-projects-henrique/)
+- Project: [Website for DPKin](https://henriquedafonte.github.io/personal-projects-henrique/projectweb/)
 
 <br/>
 <br/>
