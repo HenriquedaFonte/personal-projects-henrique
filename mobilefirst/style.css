@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+
+  --bg-color-hd: #8E9AAF;
+  --bg-color-main: #EFF1FF;
+  --bg-color-h1: #CBC0D3;
+  --bg-color-h2: #FEEAFA;
+
+  --ff-h: 'Staatliches', cursive;
+  --ff-p: 'Palanquin', sans-serif;
+
+  --fc-h: #FFFFFF;
+  --fc-p: #23053A;
+  --fc-pic:#4A4E69;
+
+  --fs-hd: 4rem;
+  --fs-p: 1.3rem;
+  --fs-pic: 2rem;
+}
+
+body {
+  
+
+}
+
+.page {
+  margin: 0 auto;
+  width: 39rem;
+  height: 200rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color-hd);
+ }
+
+header .logo {
+  width: 19rem;
+  margin: 3.2rem auto;
+  animation-name: rotation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+    
+}
+
+header h1 {
+  background-color: var(--bg-color-h1);
+  width: 39rem;
+  margin-bottom: 2.9rem;
+  text-align: center;
+  font-family: var(--ff-h);
+  font-size: var(--fs-hd);
+  color: var(--fc-h);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.5rem;
+}
+
+main {
+  padding: 3.3rem; 
+  height: auto;
+  background-color: var(--bg-color-main);  
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+ 
+}
+
+main p {
+  width: 30rem;
+  height: 7.5rem;
+  font-family: var(--ff-p);
+  font-size: var(--fs-p);
+  color: var(--fc-p);
+  line-height: 15px;
+  align-items: center;
+  text-align: center;
+  margin-top: 1.4rem;
+  margin-bottom: 6.3rem;
+}
+
+.cards {
+  display: grid;
+  gap: 3.2rem;
+  
+}
+
+.card {
+  position: relative;
+  animation-name: topDown;
+  animation-duration: 5ms;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  transition-property: all;
+  transition-duration: 400ms;  
+}
+
+
+
+h2 {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  width: 11.2rem;
+  height: 3.5rem;
+  font-family: var(--fs-pic);
+  color: var(--fc-pic);
+  text-transform: uppercase;
+  background-color: var(--bg-color-h2);
+  border-radius: 2rem;
+  padding:  0.9rem 2.5rem;  
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  opacity: 50%;
+}
+
+@keyframes topDown {
+  0%{
+    opacity: 0;
+    transform: translateY(-90px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+
+@keyframes rotation {
+  100%{
+    transform: rotate(360deg);
+  }
+
+  
+}
+
