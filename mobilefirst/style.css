@@ -44,10 +44,7 @@ header {
 header .logo {
   width: 19rem;
   margin: 3.2rem auto;
-  animation-name: rotation;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-    
+  animation: rotation 5s normal linear infinite;     
 }
 
 header h1 {
