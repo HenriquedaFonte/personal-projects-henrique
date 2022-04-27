@@ -142,5 +142,5 @@ h2 {
 @keyframes rotation {
   100%{
     transform: rotate3d(0, 0.8, 0.2, 360deg);  
+  }
 }
-
