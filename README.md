@@ -10,6 +10,7 @@ A way to document my journey as a WebDev aspirer 🚀
 ### 📌 Table of Contents
 
 - Project: [Website for DPKin](https://henriquedafonte.github.io/personal-projects-henrique/projectweb/)
+- Project: [Animated mobile site](https://henriquedafonte.github.io/personal-projects-henrique/mobilefirst/)
 
 <br/>
 <br/>
